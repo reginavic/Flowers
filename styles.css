@@ -1,20 +1,20 @@
 body {
-    background-color: #2f5243;
+    background-color: #21382e;
 }
 .nav {
     display: flex;
     justify-content: flex-end;
-    background-color: #2c493c;
+    background-color: #21382e;
     padding: 10px;
 } 
 .item {
-    color: beige;
+    color:white ;
     padding: 10px;
     text-transform: uppercase;
     text-decoration: none;
 }
 .item:hover {
-    color: white;
+    color: beige;
 }
 .first {
     margin-right: auto;
@@ -28,7 +28,7 @@ body {
 .top {
     width:100%;
 }
-.main{
+.main {
     position: absolute;
     left: 250px;
     top: 300px;
@@ -41,18 +41,19 @@ body {
 }
 .title {
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 #MyVideo {
     width: 50%;
+    height: 50%;
 }
-.middle{
+.middle {
     font-family: 'STIX Two Text', serif;
     font-size: 30px;
     color: white;
-    margin-left: 220px;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px #302e2e;
+    margin-left: 50px;
 }
 .text {
     padding: 5px;
@@ -86,6 +87,22 @@ body {
     border-radius: 5px;
     box-shadow: 4px 4px 4px 4px #3d3a3a;
 }
+.price {
+    color: rgb(140, 138, 138);
+    font-size: 20px;
+    align-self: center;
+}
+ins {
+    text-decoration: none;
+    color: #2b5140;
+}
+.buy {
+    font-size: 15px;
+    color: #21382e;
+}
+.buy:hover {
+    text-decoration: none;
+}
 h3, img, a {
     align-self: center;
 }
@@ -93,24 +110,8 @@ h3 {
     color: #3c6854;
     font-size: 20px;
 }
-.price {
-    color: teal;
-    font-size: 20px;
-    align-self: center;
-}
-ins {
-    text-decoration: none;
-    color: #345345;
-}
-.buy {
-    font-size: 15px;
-    color: rgb(122, 119, 122);
-}
-.buy:hover {
-    text-decoration: none;
-}
 hr {
-    border: 5px solid #2c4b3d;
+    border: 3px solid #2c4b3d;
     margin-top: 50px;
 }
 .newslatter {
@@ -125,21 +126,21 @@ hr {
     text-shadow: 2px 2px 4px #302e2e;
 }
 .cta {
-    padding: 20px;
-}
-.lb {
-    padding: 15px;
+    padding: 10px;
+    display: flex;
 }
 .in {
-    padding: 10px;
+    width: 220px;
+    height: 40px;
 }
 .btn {
     background-color: #2c4b3d;
     color: white;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
-    padding: 10px;
+    width: 120px;
+    height: 48px;
 }
 .btn:hover {
     background-color: #335847;
@@ -151,7 +152,7 @@ hr {
     list-style: none;
     cursor: pointer;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
 }
 .li {
     padding: 5px;
@@ -164,10 +165,15 @@ hr {
     align-self:flex-start;
     margin-left: auto;
 }
-@media all and (max-width:800px) {
-    body {
-        background-color: #2a473a;
-    }
+.infooter {
+    font-family: 'STIX Two Text', serif;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #302e2e;
+}
+
+@media all and (max-width:900px) {
     .nav {
     font-size: 15px;
     flex-wrap: wrap;
@@ -181,12 +187,46 @@ hr {
     top: 200px;
     left: 100px;
     }
-    #MyVideo {
+    #MyVideo { 
     width: 50%;
+    height: auto;
     }
     .middle {
     font-size: 20px;
     margin-left: 20px;
+    }
+    .text {
+    font-size: 16px;
+    margin-left: 5px;
+    }
+    .cover {
+    font-size: 30px;
+    }
+    .Completion {
+    display: flex;
+    justify-content: center;
+    }
+    .news {
+    font-size: 18px;
+    }
+    .in {
+    width: 180px;
+    height: 30px;
+    }
+    .btn {
+    font-size: 16px;
+    width: 120px;
+    height: 37px;
+    }
+    .infooter {
+    font-size: 20px;
+    }
+}
+
+@media all and (max-width:600px) {
+    .middle {
+    font-size: 20px;
+    margin-left: 15px;
     }
     .text {
     font-size: 15px;
@@ -196,46 +236,22 @@ hr {
     font-size: 20px;
     }
     .Completion {
-        display: flex;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
     }
     .news {
-        font-size: 20px;
+    font-size: 16px;
     }
-}
-@media all and (max-width:500px) {
-    body {
-        background-color: #2a473a;
-        }
-        .nav {
-        font-size: 15px;
-        flex-wrap: wrap;
-        }
-        .main {
-        font-size: 25px;
-        position: absolute;
-        top: 200px;
-        left: 100px;
-        }
-        #MyVideo {
-        width: 50%;
-        }
-        .middle {
-        font-size: 20px;
-        margin-left: 20px;
-        }
-        .text {
-        font-size: 15px;
-        margin-left: 5px;
-        }
-        .cover {
-        font-size: 15px;
-        }
-        .Completion {
-            display: flex;
-            justify-content: center;
-        }
-        .news {
-            font-size: 20px;
-        }
+    .in {
+    width: 180px;
+    height: 30px;
+    }
+    .btn {
+    font-size: 16px;
+    width: 120px;
+    height: 37px;
+    }
+    .infooter {
+    font-size: 16px;
+    }
 }
